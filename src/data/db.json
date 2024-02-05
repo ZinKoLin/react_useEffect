@@ -1,0 +1,20 @@
+{
+    "trips":[
+        {
+            "id":1,
+            "name":"2 days in Chaung Thar",
+            "price":100000
+        },
+        {
+            "id":2,
+            "name":"3 days in Kalaw",
+            "price":300000
+        },
+        {
+            "id":3,
+            "name":"1 days in Yangon",
+            "price":200000
+        }
+
+    ]
+}
