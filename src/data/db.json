@@ -3,17 +3,27 @@
         {
             "id":1,
             "name":"2 days in Chaung Thar",
-            "price":100000
+            "price":100000,
+            "country":"Myanmar"
         },
         {
             "id":2,
             "name":"3 days in Kalaw",
-            "price":300000
+            "price":300000,
+            "country":"Myanmar"
         },
         {
             "id":3,
             "name":"1 days in Yangon",
-            "price":200000
+            "price":200000,
+            "country":"Myanmar"
+        },
+        {
+            "id":4,
+            "name":"3 days in Bankonk",
+            "price":8000000,
+            "country":"Thailand"
+
         }
 
     ]
