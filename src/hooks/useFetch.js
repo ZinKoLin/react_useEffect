@@ -7,8 +7,12 @@ function useFetch(url){
     let [error, setError] = useState(null);
 
     useEffect(()=>{
+        let abortController = new AbortController();
+        let signal = abortController.signal;
         setLoading(true);
-        fetch(url)
+        fetch(url,{
+            signal
+        })
               .then(res=>{
                 if(!res.ok){
                     throw Error('Bad Api Call');
@@ -23,7 +27,13 @@ function useFetch(url){
           })
           .catch(e=>{
             setError(e.message);
+
           })
+            //clean up function
+          return ()=>{
+            abortController.abort();
+
+          }
         
       },[url]);//dependcy arrary
 
